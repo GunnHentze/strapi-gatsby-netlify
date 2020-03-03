@@ -16,7 +16,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-strapi',
       options: {
-        apiURL: ProcessingInstruction.env.DEPLOY_URL ? 'https://strapi-gatsby-kli-postgresql.herokuapp.com' : 'http://localhost:1337',
+        apiURL: process.env.DEPLOY_URL ? "https://strapi-gatsby-kli-postgresql.herokuapp.com" : "http://localhost:1337",
         contentTypes: [
           'article',
           'user'
